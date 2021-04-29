@@ -32,7 +32,7 @@ def make_conn(user, email):
     if user_input != '':
         user = user_input
     user_input = input(f'email: [{email}]:')
-    if user_input != '':
+    if len(user_input) > 3:
         email = user_input
     server = input('server name:')
     password = getpass()
